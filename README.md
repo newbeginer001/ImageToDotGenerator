@@ -2,6 +2,11 @@
 
 A simple web application that converts uploaded images into ASCII/Unicode dot art text.
 
+![screencapture-127-0-0-1-5500-index-html-2025-04-10-13_27_05 (1)](https://github.com/user-attachments/assets/4749c3cd-eb28-4166-9c9d-be13643d4ac8)
+![screencapture-127-0-0-1-5500-index-html-2025-04-10-12_47_53](https://github.com/user-attachments/assets/982d56eb-2e5b-4ec6-b503-3552f2068ac5)
+
+
+
 ## Features
 
 *   Upload an image (JPG, PNG, GIF, WEBP).
