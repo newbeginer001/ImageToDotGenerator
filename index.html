@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image to Dot Art Generator</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Image to Dot Art Generator</h1>
+    </header>
+
+    <div class="card">
+      <!-- SETTINGS PANEL -->
+      <div class="settings-panel">
+        <h2>Settings</h2>
+        <div class="control-group">
+          <label for="imageLoader">Choose File:</label>
+          <input type="file" id="imageLoader" accept="image/*">
+        </div>
+        <div class="control-group">
+          <label for="dotSpacing">Dot Spacing:</label>
+          <input type="range" id="dotSpacing" min="2" max="20" value="5">
+          <span id="dotSpacingValue" class="value-display">5px</span>
+        </div>
+        <div class="control-group">
+          <label for="contrast">Contrast:</label>
+          <input type="range" id="contrast" min="0" max="200" value="100">
+          <span id="contrastValue" class="value-display">100%</span>
+        </div>
+        <div class="control-group">
+          <label for="brightnessCurve">Brightness Curve (Gamma):</label>
+          <input type="range" id="brightnessCurve" min="10" max="300" value="100">
+          <span id="brightnessCurveValue" class="value-display">100%</span>
+        </div>
+        <div class="control-group">
+          <label for="dotColor">Dot Color:</label>
+          <input type="color" id="dotColor" value="#000000">
+        </div>
+        <div class="control-group">
+          <label for="bgColor">Background Color:</label>
+          <input type="color" id="bgColor" value="#ffffff">
+        </div>
+        <span id="status" class="info">
+          <span class="icon">ℹ️</span> Select an image to start.
+        </span>
+      </div>
+
+      <!-- OUTPUT PANEL -->
+      <div class="output-panel">
+        <h2>Output</h2>
+        <div class="output-container">
+          <pre id="outputText"></pre>
+        </div>
+        <div class="output-controls">
+          <button id="copyTextButton" disabled>Copy Text</button>
+          <button id="downloadTextButton" disabled>Download Text</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hidden Canvases -->
+  <canvas id="imageCanvas" style="display:none;"></canvas>
+  <canvas id="analysisCanvas" style="display:none;"></canvas>
+
+  <!-- Link to the external JavaScript file (place before closing </body>) -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
